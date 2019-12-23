@@ -1,0 +1,3 @@
+#ignore this directory
+__pycache__
+.pyc
