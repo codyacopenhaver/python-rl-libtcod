@@ -13,11 +13,12 @@ def main():
 
     libtcod.console_init_root(screen_width, screen_height, 'libtcod tutorial revised', False, libtcod.RENDERER_SDL2, vsync=True)
 
-    con = libtcod.console_new(screen_width, screen_height)
+    #con = libtcod.console_new(screen_width, screen_height)
+    con = libtcod.console.Console(screen_width, screen_height)
     
     key = libtcod.Key()
     mouse = libtcod.Mouse()
-    myColor = "blue"
+    
     while not libtcod.console_is_window_closed():
 
         libtcod.sys_check_for_event(libtcod.EVENT_KEY_PRESS, key, mouse)
